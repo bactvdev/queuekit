@@ -1,0 +1,22 @@
+{
+  "name": "@bactv/queuekit",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc",
+    "worker": "node dist/bootstrap/worker.js"
+  },
+  "dependencies": {
+    "ioredis": "^5.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0"
+  },
+  "author": "Bac Truong Van<bactruongvan17@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "queue",
+    "redis queue",
+    "memory queue"
+  ]
+}
