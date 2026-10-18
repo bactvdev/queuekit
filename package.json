@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "build": "tsc",
-    "worker": "node dist/bootstrap/worker.js"
+    "worker": "node dist/bootstrap/worker.js",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "ioredis": "^5.4.1"
