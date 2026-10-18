@@ -18,7 +18,8 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "worker": "node dist/bootstrap/worker.js",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "pnpm build",
+    "prepare": "pnpm build"
   },
   "dependencies": {
     "ioredis": "^5.4.1"
