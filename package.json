@@ -1,8 +1,22 @@
 {
   "name": "@bactv/queuekit",
   "version": "1.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "type": "commonjs",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -p tsconfig.json",
     "worker": "node dist/bootstrap/worker.js",
     "prepublishOnly": "npm run build"
   },
